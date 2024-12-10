@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 8px;
+            width: 300px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 0.85em;
+            color: white;
+
+            background: linear-gradient(to right, #001f3f, #003366);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: white;
+                background: rgb(27, 27, 35);
+            }
+        }
+
+    </style>
+    <script type="module" src="popup.js"></script>
+    
+
+</head>
+
+<body>
+    <extension-popup></extension-popup>
+    <button id="scrapeButton">Download Visible Text</button><br>
+    <button id="reportDarkPatternButton">
+        Report Dark Pattern
+    </button>
+    <script src="../scripts/feedback.js"></script>
+
+    
+</body>
+
+</html>

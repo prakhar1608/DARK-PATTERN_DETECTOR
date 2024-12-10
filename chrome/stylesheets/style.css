@@ -1,0 +1,27 @@
+.__ph__pattern-detected {
+    border: 2px solid black !important;
+}
+
+
+.__ph__current-pattern {
+    z-index: 10000 !important;
+    box-shadow: 0 0 120px 150px rgba(217, 77, 64, 0.929);
+    animation: __ph__highlight 3s ease-in-out infinite alternate;
+    opacity: 0.9;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.__ph__current-pattern:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px 60px rgba(255, 50, 50, 0.8);
+}
+
+@keyframes __ph__highlight {
+    from {
+        opacity: 0.75;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
